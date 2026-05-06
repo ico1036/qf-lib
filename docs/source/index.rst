@@ -64,6 +64,9 @@ API Reference
 :doc:`portfolio_construction`
     Components which facilitate the process of portfolio construction. The construction process involves covariance matrix optimization with one of the implemented optimizers.
 
+:doc:`dashboard`
+    Optional NiceGUI + Plotly viewer for browsing backtest runs and rendering the tearsheet content interactively.
+
 
 
 .. Hidden TOCs
@@ -100,6 +103,7 @@ API Reference
    document_utils
    indicators
    portfolio_construction
+   dashboard
 
 
 

@@ -62,7 +62,8 @@ setup(
         "yfinance": ["yfinance>=0.2.55"],
         "detailed_analysis": ["statsmodels>=0.13.0,<0.14.0", "scipy>=1.6.3,<1.12.0", "cvxopt>=1.2.7,<=1.3.2",
                               "arch>=5.4,<=7.0"],
-        "alpaca": ["alpaca-py>=0.37.0"]
+        "alpaca": ["alpaca-py>=0.37.0"],
+        "dashboard": ["nicegui>=2.9.0", "plotly>=5.20.0", "scipy>=1.10.0"],
     },
     keywords='quantitative finance backtester',
     python_requires='>=3.8.0'
