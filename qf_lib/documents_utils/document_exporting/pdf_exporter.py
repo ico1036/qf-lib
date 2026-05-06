@@ -112,6 +112,6 @@ class PDFExporter(DocumentExporter):
 
         # Write out the PDF.
         self.logger.info("Rendering PDF in {}...".format(output_filename))
-        html.write_pdf(output_filename, css_file_paths)
+        html.write_pdf(output_filename, stylesheets=css_file_paths)
 
         return output_filename
