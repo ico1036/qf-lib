@@ -1,0 +1,23 @@
+[project]
+name = "us-universe-research"
+version = "0.1.0"
+description = "US equities top-3000 PIT universe + qf-lib backtests"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "qf-lib",
+    "yfinance>=0.2.40",
+    "pyarrow>=15.0.0",
+    "requests>=2.31.0",
+    "nicegui>=2.9.0",
+    "plotly>=6.7.0",
+]
+
+[tool.uv.sources]
+qf-lib = { path = "../..", editable = true }
+
+[tool.uv]
+# qf-lib pins WeasyPrint==52.5 which needs old cairo/pango system libs.
+# Newer WeasyPrint ships pre-compiled wheels for macOS arm64 and is API-compatible.
+override-dependencies = [
+    "WeasyPrint>=60.0",
+]
